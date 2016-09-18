@@ -57,6 +57,9 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+.pinkish-grey {
+  color: var(--pinkish-grey);
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -135,9 +138,6 @@ section.latest-recipes > .caption-title {
 section.latest-recipes > h2 {
   margin-bottom: 2rem;
 }
-section.latest-recipes > h2 > span {
-  color: var(--pinkish-grey);
-}
 section.latest-recipes > button {
   margin-top: 3rem;
   margin-bottom: 6rem;
@@ -162,7 +162,16 @@ section.book-ad img {
 section.video-recipes {
   padding-top: 1rem;
   padding-bottom: 6rem;
-  background-color: var(--light-grey);
+  background-color: white;
+  background: linear-gradient(top, white 0% white 24%, #f6f6f6 24%, #f6f6f6 100%);
+  background: -webkit-linear-gradient(top, white 0%, white 24%, #f6f6f6 24%, #f6f6f6 100%);
+  background: -moz-linear-gradient(top, white 0%, white 24%, #f6f6f6 24%, #f6f6f6 100%);
+}
+section.video-recipes h2 {
+  margin-bottom: 2rem;
+}
+section.video-recipes button {
+  margin-top: 3rem;
 }
 
 /* Setjum media queries neðst svo ekkert annað override þær */
