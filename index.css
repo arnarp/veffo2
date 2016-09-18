@@ -1,41 +1,82 @@
 :root {
-  --beige-color: #e3cdb1;
+  --beige: #e3cdb1;
+  --beige-two: #f7f1eb;
+  --slate-grey: #5e5b69;
+  --warm-grey: #9b9b9b;
+  --pinkish-grey: #d0d0d0;
 }
 html {
   box-sizing: border-box;
   font-size: 10px;
   background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 body {
   margin: 0;
 }
-button {
+button, a {
   cursor: pointer;
 }
 button.outline-btn {
   width: 19.1rem;
   height: 4.2rem;
-  border: solid 0.1rem var(--beige-color);
+  border: solid 0.1rem var(--beige);
   background: transparent;
   font-family: Poppins;
   font-size: 1.4rem;
-  color: var(--beige-color);
+  color: var(--beige);
 }
-p, h1 {
+p, h1, h2 {
   margin: 0;
 }
 p.caption-title {
-  font-family: Poppins;
   font-size: 1.4rem;
-  color: var(--beige-color);
+  color: var(--beige);
   text-align: center;
   line-height: 1.9rem;
 }
-h1 {
+h1, h2 {
   font-family: Playfair Display;
-  font-size: 3.2rem;
   font-weight: bold;
   text-align: center;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-bottom: 2rem;
+}
+.card img {
+  max-width: 100%;
+}
+.card .card-date, div.card .card-name-link-container {
+  margin-left: 1.9rem;
+}
+.card .card-date {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: var(--warm-grey);
+  margin-top: 1.5rem;
+}
+.card h1 {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.card a.card-link {
+  font-size: 1.4rem;
+  color: var(--beige);
+  margin-right: 1.8rem;
+}
+.card div.card-name-link-container {
+  display: flex;
+  justify-content: space-between;
 }
 header {
   height: 6rem;
@@ -74,4 +115,29 @@ section.hero > p.caption-title {
 }
 section.hero > h1 {
   margin-bottom: 1.7rem;
+}
+section.latest-recipes {
+  background: linear-gradient(top, white 0% white 22%, #f6f6f6 22%, #f6f6f6 100%);
+  background: -webkit-linear-gradient(top, white 0%, white 22%, #f6f6f6 22%, #f6f6f6 100%);
+  background: -moz-linear-gradient(top, white 0%, white 22%, #f6f6f6 22%, #f6f6f6 100%);
+}
+section.latest-recipes > p.caption-title {
+  padding-top: 4.14rem;
+}
+section.latest-recipes > h2 {
+  margin-bottom: 2rem;
+}
+section.latest-recipes > h2 > span {
+  color: var(--pinkish-grey);
+}
+section.latest-recipes > button {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+/* Setjum media queries neðst svo ekkert annað override þær */
+@media only screen and (max-width: 320px) {
+  .only-desktop {
+    display: none;
+  }
 }
