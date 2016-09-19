@@ -46,6 +46,9 @@ span.caption-title {
   text-align: center;
   line-height: 1.9rem;
 }
+.white {
+  color: white;
+}
 h1, h2 {
   font-family: Playfair Display;
   font-weight: bold;
@@ -172,6 +175,41 @@ section.video-recipes h2 {
 }
 section.video-recipes button {
   margin-top: 3rem;
+}
+section.newsletter-subscription {
+  padding-top: 6.3rem;
+  padding-bottom: 6rem;
+  background-color: black;
+  align-items: stretch;
+}
+section.newsletter-subscription .form-group {
+  text-align: left;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+section.newsletter-subscription .form-group label {
+  font-size: 1.4rem;
+  line-height: 1.9rem; 
+}
+section.newsletter-subscription .form-group input#newsletter-email-imput {
+  width: 100%;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  background: transparent;
+  border: none;
+  border-bottom: solid 0.1rem var(--beige);
+  padding: 0;
+  color: white; 
+}
+section.newsletter-subscription button {
+  align-self: center;
 }
 
 /* Setjum media queries neðst svo ekkert annað override þær */
