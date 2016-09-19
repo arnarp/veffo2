@@ -109,7 +109,7 @@ header > button#menu-button {
   padding: 0;
   background-color: inherit;
 }
-section {
+section, footer {
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
@@ -210,6 +210,28 @@ section.newsletter-subscription .form-group input#newsletter-email-imput {
 }
 section.newsletter-subscription button {
   align-self: center;
+}
+footer {
+  font-weight: lighter;
+  font-size: 1.4rem;
+  padding-top: 4.4rem;
+  padding-bottom: 4.4rem;
+  color: #d6d6d6;
+}
+footer #social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.9rem;
+}
+footer #social-icons img {
+  height: 4rem;
+}
+footer #link {
+  color: #d6d6d6;
 }
 
 /* Setjum media queries neðst svo ekkert annað override þær */
