@@ -2,6 +2,7 @@
 
 function setUpSideNavigation() {
   let menuButton = document.querySelector('#menu-button');
+  let menuButtonIcons = menuButton.querySelectorAll('img');
   let sections = document.querySelectorAll('section, footer');
   let sideNav = document.querySelector('aside#side-nav');
   let sectionsVisible = true;
@@ -18,8 +19,10 @@ function setUpSideNavigation() {
   function toggleMenu() {
     if (sectionsVisible) {
       setTimeout(toggleHiddenClass, 600, sections);
+      setTimeout(toggleHiddenClass, 600, menuButtonIcons);
     } else {
       toggleHiddenClass(sections);
+      toggleHiddenClass(menuButtonIcons);
     }
     setTimeout(function () {
       for (let i = 0; i < sections.length; i++) {

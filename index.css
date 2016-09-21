@@ -112,6 +112,7 @@ header > button#menu-button {
   border: 0;
   padding: 0;
   background-color: inherit;
+  outline: none;
 }
 aside#side-nav {
   background-color: #fafafa;
@@ -125,13 +126,24 @@ aside#side-nav {
   transition-duration: 600ms;
   font-size: 6rem;
   font-weight: bold;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 3rem;
 }
 aside#side-nav.visible {
   transform: translate(-100%);
   -webkit-transform: translate(-100%);
 }
-aside#side-nav ul {
-  list-style: none;
+aside#side-nav nav {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  text-align: center;
+}
+aside#side-nav nav a {
+  line-height: 12rem;
+  border-bottom: solid 0.1rem #f7f1eb;
 }
 .transform-off-screen-left {
   transform: translate(-100%);
