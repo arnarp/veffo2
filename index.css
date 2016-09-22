@@ -18,6 +18,10 @@ body {
 }
 button, a {
   cursor: pointer;
+  outline: none;
+}
+button:active {
+  filter: brightness(0.1);
 }
 button.outline-btn {
   width: 19.1rem;
@@ -71,13 +75,16 @@ h1, h2 {
 h1 {
   font-size: 3.2rem;
 }
+h2 {
+  font-size: 2rem;
+}
 @media (min-width: 768px) {
   h1 {
     font-size: 6rem;
   }
-}
-h2 {
-  font-size: 2rem;
+  h2 {
+    font-size: 4rem;
+  }
 }
 .pinkish-grey {
   color: var(--pinkish-grey);
@@ -228,12 +235,19 @@ section.hero > .caption-title {
 section.hero > h1 {
   margin-bottom: 1.7rem;
 }
+section.hero > p {
+  display: none;
+}
 @media (min-width: 768px) {
   section.hero {
     justify-content: center;
+    height: 60rem;
   }
   section.hero > .caption-title {
     padding-top: 0;
+  }
+  section.hero > p {
+    display: block;
   }
 }
 section.hero > p {
@@ -245,7 +259,7 @@ section.latest-recipes {
   background: -moz-linear-gradient(top, white 0%, white 22%, #f6f6f6 22%, #f6f6f6 100%);
 }
 section.latest-recipes > .caption-title {
-  padding-top: 4.14rem;
+  padding-top: 4rem;
 }
 section.latest-recipes > h2 {
   margin-bottom: 2rem;
@@ -253,6 +267,11 @@ section.latest-recipes > h2 {
 section.latest-recipes > button {
   margin-top: 3rem;
   margin-bottom: 6rem;
+}
+@media (min-width: 768px) {
+  section.latest-recipes > .caption-title {
+    padding-top: 8rem;
+  }
 }
 section.book-ad {
   background: linear-gradient(top, #f7f1eb 0%, #f7f1eb 71%, white 71%, white 100%);
