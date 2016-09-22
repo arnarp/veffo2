@@ -47,6 +47,16 @@ span.caption-title {
   text-align: center;
   line-height: 1.9rem;
 }
+@media (min-width: 768px) {
+  p {
+    font-size: 1.8rem;
+    text-align: left;
+    line-height: 3.2rem;
+  }
+  span.caption-title {
+    font-size: 1.6rem;
+  }
+}
 .white {
   color: white;
 }
@@ -60,6 +70,11 @@ h1, h2 {
 }
 h1 {
   font-size: 3.2rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
 }
 h2 {
   font-size: 2rem;
@@ -125,12 +140,21 @@ header > nav > a {
 @media (min-width: 544px) {
   header {
     padding: 0 3rem;
+    position: fixed;
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 100%;
   }
   header > button#menu-button {
     display: none;
   }
   header > nav {
     display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    padding: 0 5rem;
   }
 }
 aside#side-nav {
@@ -181,6 +205,14 @@ section, footer {
     padding: 0 3rem;
   }
 }
+@media (min-width: 768px) {
+  section, footer {
+    padding: 0 5rem;
+  }
+  section {
+    align-items: flex-start;
+  }
+}
 section.hero {
   background-image: url('assets/background-header-image.png');
   background-image: -webkit-image-set( url('assets/background-header-image.png') 1x, url('assets/background-header-image@2x.png') 2x);
@@ -195,6 +227,17 @@ section.hero > .caption-title {
 }
 section.hero > h1 {
   margin-bottom: 1.7rem;
+}
+@media (min-width: 768px) {
+  section.hero {
+    justify-content: center;
+  }
+  section.hero > .caption-title {
+    padding-top: 0;
+  }
+}
+section.hero > p {
+  margin-bottom: 3rem;
 }
 section.latest-recipes {
   background: linear-gradient(top, white 0% white 22%, #f6f6f6 22%, #f6f6f6 100%);
