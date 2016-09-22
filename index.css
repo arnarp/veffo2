@@ -89,6 +89,10 @@ h2 {
 .pinkish-grey {
   color: var(--pinkish-grey);
 }
+.cards {
+  display: flex;
+  flex-direction: column;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -117,6 +121,16 @@ h2 {
 .card div.card-name-link-container {
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: calc(100% / 2 - 1rem);
+  }
 }
 header {
   height: 6rem;
@@ -147,7 +161,7 @@ header > nav > a {
 @media (min-width: 544px) {
   header {
     padding: 0 3rem;
-    position: fixed;
+    position: absolute;
     background-color: transparent;
     box-sizing: border-box;
     width: 100%;
