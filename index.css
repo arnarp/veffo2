@@ -236,7 +236,7 @@ section, footer {
 }
 section.hero {
   background-image: url('assets/background-header-image.png');
-  background-image: -webkit-image-set( url('assets/background-header-image.png') 1x, url('assets/background-header-image@2x.png') 2x);
+  background-image: -webkit-image-set( url('assets/background-header-image.png') 1x, url('assets/background-header-image@2x.png') 2x, url('assets/background-header-image@3x.png') 3x);
   background-position: 64% 100%;
   background-repeat: no-repeat;
   height: 49rem;
@@ -251,21 +251,28 @@ section.hero > h1 {
 }
 section.hero > p {
   display: none;
+  margin-bottom: 3rem;
 }
 @media (min-width: 768px) {
   section.hero {
     justify-content: center;
     height: 60rem;
+    background-position: 65% 130%;
+    background-image: url('assets/background-header-image@2x.png');
+  background-image: -webkit-image-set( url('assets/background-header-image@2x.png') 1x, url('assets/background-header-image@3x.png') 2x);
   }
   section.hero > .caption-title {
     padding-top: 0;
   }
   section.hero > p {
     display: block;
+    max-width: 48rem;
   }
 }
-section.hero > p {
-  margin-bottom: 3rem;
+@media (min-width: 992px) {
+  section.hero > p {
+    max-width: 55rem;
+  }
 }
 section.latest-recipes {
   background: linear-gradient(top, white 0% white 22%, #f6f6f6 22%, #f6f6f6 100%);
