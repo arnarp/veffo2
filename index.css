@@ -60,6 +60,10 @@ span.caption-title {
   span.caption-title {
     font-size: 1.6rem;
   }
+  button.outline-btn {
+    width: 25rem;
+    height: 5.2rem;
+  }
 }
 .white {
   color: white;
@@ -295,8 +299,8 @@ section.hero > p {
     max-width: 55rem;
   }
   section.hero > button.outline-btn {
-    background: -webkit-linear-gradient(left, #e3cdb1 0%, #e3cdb1 47%, rgba(255,0,0,0) 47%, rgba(255,0,0,0) 100%);
-    background: linear-gradient(left, #e3cdb1 0%, #e3cdb1 47%, rgba(255,0,0,0) 47%, rgba(255,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, #e3cdb1 0%, #e3cdb1 48%, rgba(255,0,0,0) 48%, rgba(255,0,0,0) 100%);
+    background: linear-gradient(left, #e3cdb1 0%, #e3cdb1 48%, rgba(255,0,0,0) 48%, rgba(255,0,0,0) 100%);
   }
   section.hero > button.outline-btn > span {
     color: white;
@@ -320,6 +324,23 @@ section.latest-recipes > button {
 @media (min-width: 768px) {
   section.latest-recipes > .caption-title {
     padding-top: 8rem;
+  }
+}
+@media (min-width: 1200px) {
+  section.latest-recipes > button {
+    align-self: center;
+  }
+  section.latest-recipes > .horizontal-line {
+    display: inherit;
+    height: 0.1rem;
+    width: calc(100% / 3 + 1.5rem);
+    background-color: #e7e7e7;
+    position: relative;
+    top: 5.6rem;
+  }
+  section.latest-recipes > .horizontal-line:last-of-type {
+    top: 5.5rem;
+    left: calc(100% / 3 * 2 - 1.5rem);
   }
 }
 section.book-ad {
